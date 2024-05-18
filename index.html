@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youssef Baamel - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/mypic.jpg" alt="Youssef Baamel" width="120" style="border-radius: 10px;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Youssef Baamel">Youssef Baamel</h1>
+
+          <p class="title flex">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:imbaamelyoussef@gmail.com" class="contact-link">imbaamelyoussef@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+212651614951" class="contact-link">+212 651-614-951</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="language-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Languages</p>
+
+              <time datetime="1982-06-23">English</time>
+              <time datetime="1982-06-23">French </time>
+              <time datetime="1982-06-23">Arabic </time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Casablanca, Morocco</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/youssefbaamel/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/youssefships" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/baamelyoussef" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+         
+          <li class="navbar-item">
+            <button class="navbar-link active" active data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link " data-nav-link>Resume</button>
+          </li>
+
+
+         
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+
+      <article class="portfolio active" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Freelance</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Fun projects</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Algo Consulting Group</button>
+            </li>
+
+          </ul> -->
+
+          <!-- <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div> -->
+
+          <ul class="project-list">
+
+            
+            <li class="project-item  active" data-filter-item data-category="Oky Solutions">
+              <a href="#">
+
+                <figure class="project-img">
+                  <!-- <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div> -->
+
+                  <img src="./assets/images/1714950241136.jpg" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">Oky Newsletters</h3>
+                <a href="https://github.com/baamelyoussef/OkyNewsletters" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a></div>
+
+                <p class="project-category">Oky Solutions</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="Freelance">
+              <a href="https://npoproject.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" ></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/32051245.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">NPO - Bureaucratic processes management app
+                </h3>
+                <a href="https://github.com/baamelyoussef/NPO-vue" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a></div>
+
+                <p class="project-category">Freelance</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://ecomestore-nikeinspired.vercel.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/1714950626619.jpg" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">E-commerce Store
+                </h3>
+                <a href="https://github.com/baamelyoussef/ecomestore_nikeinspired" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a></div>
+                
+                <p class="project-category">Fun projects</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://www.oncf-voyages.ma/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/658521532.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">ONCF Voyages</h3>
+                <!-- <a href="https://github.com/baamelyoussef" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a> -->
+              </div>
+
+                <p class="project-category">Algo Consulting Group</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://www.supratours.ma/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/75516725342564.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">Supratours</h3>
+                <!-- <a href="https://github.com/baamelyoussef" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a> -->
+              </div>
+
+                <p class="project-category">Algo Consulting Group</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="fun">
+              <a href="https://outmailer.vercel.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/2335163325125.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">Outmailer</h3>
+                <a href="https://github.com/baamelyoussef/Outmailer" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a></div>
+
+                <p class="project-category">Fun Projects</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="fun">
+              <a href="https://boilerpad.com" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/548456432156.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">Boilerpad</h3>
+                <a href="https://github.com/baamelyoussef/boilerpad" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a></div>
+
+                <p class="project-category">Fun Projects</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="1450">
+              <a href="https://gestis.vercel.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/635653654.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">Gestis</h3>
+                <!-- <a href="https://github.com/baamelyoussef/boilerpad" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a> -->
+              </div>
+
+                <p class="project-category">1450 Factory</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="1450">
+              <a href="https://blink-analytics.vercel.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/354896255.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;">
+                <h3 class="project-title">Blink Analytics</h3>
+                <!-- <a href="https://github.com/baamelyoussef/boilerpad" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a> -->
+              </div>
+
+                <p class="project-category">1450 Factory</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="1450">
+              <a href="https://apps.apple.com/ma/app/blink-pharmacie/id1482286159" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/51681354686.png" alt="finance" loading="lazy">
+                </figure>
+<div style="display: flex;justify-content: space-between;"> 
+                <h3 class="project-title">Blink Pharmacie</h3>
+                <!-- <a href="https://github.com/baamelyoussef/boilerpad" target="_blank" class="social-link-portfolio">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a> -->
+              </div>
+
+                <p class="project-category">1450 Factory</p>
+              </a>
+            </li>
+           
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume " data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">One Million Arab Coders Initiative By Udacity</h4>
+              <h4 style="color: #ffffff; font-weight: 400;">Front-End Web Developement</h4>
+
+              <span>2020</span>
+
+              <p class="timeline-text">
+                Completed a comprehensive program covering front-end technologies, including HTML, CSS, and JavaScript, as well as frameworks such as React.js.
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Hassan II University - ENSET Mohammedia</h4>
+              <h4 style="color: #ffffff; font-weight: 400;">Bachelor Degree - Computer Science </h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                Studied core computer science subjects including algorithms, data structures, and object-oriented programming. Gained proficiency in programming languages such as C, C++, and C#. Additionally, learned modern front-end technologies like React.js, Vue.js, and mobile development using React Native.
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Oky Solutions</h4>
+              <h4 style="color: #ffffff; font-weight: 400;">Full Stack Developer - Internship </h4>
+              <h4 style="color: #ffffff; font-weight: 400; font-size: small">On site </h4>
+
+              <span>2019 — 2020</span>
+
+              <p class="timeline-text">
+                
+              </p>
+              <div class="technologies has-scrollbar">
+                <figure class="tech-img">
+                  <img src="./assets/images/laravel.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/tailwindcss.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/vue.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/nuxtjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/firebase.png" alt="Daniel lewis" width="30" >
+                </figure>
+                
+              </div>
+            </li>
+            <li class="timeline-item">
+
+              <!-- <h4 class="h4 timeline-item-title">Oky Solutions</h4> -->
+              <h4 style="color: #ffffff; font-weight: 400;">Full Stack Developer - Freelance </h4>
+              <h4 style="color: #ffffff; font-weight: 400; font-size: small">Remote </h4>
+
+              <span>2019 — 2020</span>
+
+              <p class="timeline-text">
+                Collaborating with clients to establish project goals, projections and milestones.
+Multi-tasked across multiple functions and roles from front end to full-stack and cms developement to generate project results and meet
+deadlines and organizational expectations.
+              </p>
+              
+              <div class="technologies has-scrollbar">
+                <figure class="tech-img">
+                  <img src="./assets/images/nextjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/nodejs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/vue.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/nuxtjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/firebase.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/reactjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/redux.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/ts.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/tailwindcss.png" alt="Daniel lewis" width="30" >
+                </figure>
+                
+              </div>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Algo Consulting Group</h4>
+              <h4 style="color: #ffffff; font-weight: 400;">Front End Engineer - Full Time </h4>
+              <h4 style="color: #ffffff; font-weight: 400; font-size: small">On site </h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text flex">
+                I collaborated with their client ONCF, Morocco's primary railway company, within an Agile Scrum framework. Utilizing React.js and Node.js, I enhanced the Supratours Marketplace website & ONCF Voyages E-commerce train ticket website, meeting their client's goals and ensuring timely delivery.
+              </p>
+              
+              <div class="technologies has-scrollbar">
+                <figure class="tech-img">
+                  <img src="./assets/images/reactjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/redux.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/nodejs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/tailwindcss.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/ts.png" alt="Daniel lewis" width="30" >
+                </figure>
+                
+              </div>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MEDIOT</h4>
+              <h4 style="color: #ffffff; font-weight: 400;">Front End Engineer - Full Time </h4>
+              <h4 style="color: #ffffff; font-weight: 400; font-size: small">On site </h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                At Mediot, a medical solutions company, I worked as a full-stack software engineer. Using Agile methods, I developed cutting-edge applications with React.js and Node.js to meet industry needs.
+              </p>
+              
+              <div class="technologies has-scrollbar">
+                <figure class="tech-img">
+                  <img src="./assets/images/reactjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/nextjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/tailwindcss.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/redux.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/ts.png" alt="Daniel lewis" width="30" >
+                </figure>
+                
+                
+              </div>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">1450 Factory</h4>
+              <h4 style="color: #ffffff; font-weight: 400;">Software Engineer - Full Time </h4>
+              <h4 style="color: #ffffff; font-weight: 400; font-size: small">Remote </h4>
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Proficient in the development of both web and mobile applications. Working closely with clients across various sectors, including pharmaceuticals, I actively contributed to the creation of tailored solutions to address their unique requirements. 
+One notable collaboration was with blinkpharma.ma, a client in the pharmaceutical industry, where I played a key role in developing innovative applications to streamline their operations and enhance their digital tools.
+              </p>
+              
+              <div class="technologies has-scrollbar">
+                <figure class="tech-img">
+                  <img src="./assets/images/nextjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/nodejs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/vue.png" alt="Daniel lewis" width="30" >
+                </figure>
+               
+                <figure class="tech-img">
+                  <img src="./assets/images/firebase.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/reactjs.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/redux.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/ts.png" alt="Daniel lewis" width="30" >
+                </figure>
+                <figure class="tech-img">
+                  <img src="./assets/images/tailwindcss.png" alt="Daniel lewis" width="30" >
+                </figure>
+                
+                
+              </div>
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+   
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106376.73625939105!2d-7.669393660181397!3d33.57226019930468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca!5e0!3m2!1sfr!2sma!4v1715873730812!5m2!1sfr!2sma"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://api.web3forms.com/submit" method="post" class="form" >
+            <input type="hidden" name="access_key" value="22249ba9-f1ad-4d04-8c0d-6c7be96aa47e">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <input type="company" name="company" class="form-input mb-2" placeholder="Company"   data-form-input>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+          
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
